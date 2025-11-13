@@ -95,5 +95,20 @@
         </div>
     </footer>
     <a href="https://wa.me/+27607972324?text=I'm%20interested%20in%2027onHelios%20Student%20Accommodation" target="_blank" title="Chat with us on WhatsApp" aria-label="Chat with us on WhatsApp" role="button"><i class="fab fa-whatsapp"></i></a>
+
+    <script>
+        // Google Analytics 4 Event Tracking for Apply Now Button
+        document.querySelectorAll('.cta-primary').forEach(button => {
+            button.addEventListener('click', function() {
+                const eventName = this.getAttribute('data-ga4-event');
+                if (eventName && typeof gtag === 'function') {
+                    gtag('event', eventName, {
+                        'event_category': 'engagement',
+                        'event_label': 'Apply Now Button Click'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
