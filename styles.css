@@ -263,7 +263,28 @@ a[aria-label="Chat with us on WhatsApp"] {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     text-decoration: none;
-}       
+}  
+
+a[aria-label="Chat with us on WhatsApp"]:hover {
+    background-color: #128C7E;
+}
+
+/* Responsive design for large screens*/
+
+@media (min-width: 768px) {
+    .image-gallery {
+        display: flex;
+    }
+
+    .image-gallery img {
+        width: 30%;
+    }
+
+    .future-item {
+        display: flex;
+        align-items: flex-start;
+    }
+}
 
 
 
